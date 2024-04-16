@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.body {
+    background-color: lightgrey;
+    border-style: solid;
+}
+
+.contact, .home {
+    background-color: lightgrey;
+    border-style: solid;
+    margin-top: 49px;
+    padding: 10px;
+}
+.body{
+    background-color: lightgrey;
+    border-style: solid;
+    margin-top: 49px;
+    padding: 10px;
+}
+
+p {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+h2 {
+    color: lightgray;
+}
+
+img {
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.motto {
+    background-color: lightgrey;
+    border-style: solid;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 200px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }

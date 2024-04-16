@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylee.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <script>
+        function loadPage(pageId) {
+
+            var pages = document.getElementsByClassName("page");
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = "none";
+            }
+
+            var pageToShow = document.getElementById(pageId);
+            if (pageToShow) {
+                pageToShow.style.display = "block";
+            }
+        }
+
+        function navigateBackHome() {
+            loadPage('home');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadPage('home')">Home</a></li>
+                <li><a href="#" onclick="loadPage('about')">About Me</a></li>
+                <li><a href="#" onclick="loadPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page" id="home">
+        <h2>Home Page</h2>
+        <div class="pic">
+            <img src="mypic.jpg" alt="profile" width="300" height="300">
+        </div>
+        <p>Welcome! this is my home page!</p>
+        <p>This is Justin BSIT students and 2nd-year college at University of the Cordilleras</p>
+    </div>
+
+    <div class="page" id="about" style="display:none;">
+        <h1>About Me</h1>
+        <p>Name: Justin Paul Timosa</p>
+        <div class="pic">
+            <img src="mypic.jpg" alt="profile" width="300" height="300">
+        </div>
+        <p>Age: 21</p>
+        <p>Hobbies: </p>
+        <ul>
+            <li>Eating</li>
+            <li>Sleeping</li>
+            <li>Watching anime</li>
+            <li>Playing Basketball</li>
+            <li>Playing Badminton</li>
+        </ul>
+        <p>Location: Salud mitra, Baguio City</p>
+        <footer>
+            <p>&copy; 2024 My First Website. All rights reserved.</p>
+        </footer>
+        <button onclick="navigateBackHome()">Back to Home</button>
+    </div>
+
+    <div class="page" id="contact" style="display:none;">
+        <h2>Contact Information</h2>
+        <p>Have a question or suggestion? contact me here, and I'll be happy to assist you.</p>
+        <div class="contact-info">
+            <p>Facebook: <a href="https://www.facebook.com/justinpaul.timosa?mibextid=ZbWKwL">jjjjjjj</a></p>
+            <p>Gmail: ????????@gmail.com</p>
+        </div>
+        <footer>
+            <p>&copy; 2024 My First Website. All rights reserved.</p>
+        </footer>
+        <button onclick="navigateBackHome()">Back to Home</button>
+    </div>
+
+</body>
+</html>
